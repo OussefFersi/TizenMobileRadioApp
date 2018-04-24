@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>YouTube</title>	
+	
+	<script src="../build/jquery.js"></script>	
+	<script src="../build/mediaelement-and-player.min.js"></script>
+	<script src="testforfiles.js"></script>	
+	<link rel="stylesheet" href="../build/mediaelementplayer.min.css" />
+</head>
+<body>
+
+
+<h2>YouTube</h2>
+
+
+<video width="75%" height="75%" id="player1">
+    
+    <!-- Pseudo HTML5 -->
+    <source type="video/youtube" src="https://www.youtube.com/watch?v=igBrDYvcFlo&index=1&list=PLVJKigLCAyVotpCD3y-yBNDYjgOcX82u_" />
+
+</video>
+	
+<span id="player1-mode"></span>
+
+<script>
+
+$('video').mediaelementplayer({
+	success: function(media, node, player) {
+		$('#' + node.id + '-mode').html('mode: ' + media.pluginType);
+	}
+});
+
+</script>
+		<li><!--<a href="../index.html">Retour</a>--></li>
+
+</body>
+</html>

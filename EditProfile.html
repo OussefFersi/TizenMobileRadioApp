@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<link rel="stylesheet" href="ressources/css/style.css">
+<link rel="stylesheet" href="vendors/css/font-awesome.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=no">
+<meta name="google-signin-client_id" content="894263851839-vfn1tnd32ekktrme325vghr1pvrtfbk3.apps.googleusercontent.com">
+	<link rel="stylesheet" href="vendors/css/core.css">
+<!--<script src="vendors/js/jquery-3.1.1.min.js"></script>-->
+<script src="ressources/js/script.js"></script>
+<script src="js/main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-storage.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+           <link rel="stylesheet" type="text/css" href="css/lib/control/iconselect.css" >
+        <script type="text/javascript" src="lib/control/iconselect.js"></script>
+        
+        <script type="text/javascript" src="lib/iscroll.js"></script>
+    <script>
+            
+        var iconSelect;
+			var url;
+        window.onload = function(){
+		//selectedText = document.getElementById('selected-text');//
+		 document.getElementById('my-icon-select').addEventListener('changed', function(e){
+              url = iconSelect.getSelectedValue();
+            });
+		
+            iconSelect = new IconSelect("my-icon-select", 
+                {'selectedIconWidth':48,
+                'selectedIconHeight':48,
+                'selectedBoxPadding':1,
+                'iconsWidth':48,
+                'iconsHeight':48,
+                'boxIconSpace':1,
+                'vectoralIconNumber':2,
+                'horizontalIconNumber':4});
+
+            var icons = [];
+            //icons.push({'iconFilePath':'', 'iconValue':''});
+            icons.push({'iconFilePath':'images/icons/PI_Alien.png', 'iconValue':'images/icons/PI_Alien.png'});
+            icons.push({'iconFilePath':'images/icons/PI_Los_Muertos.png', 'iconValue':'images/icons/PI_Los_Muertos.png'});
+            icons.push({'iconFilePath':'images/icons/PI_Diablo_Barbarian.png', 'iconValue':'images/icons/PI_Diablo_Barbarian.png'});
+			icons.push({'iconFilePath':'images/icons/PI_Lord_of_Candy.png', 'iconValue':'images/icons/PI_Lord_of_Candy.png'});
+            icons.push({'iconFilePath':'images/icons/PI_Oni.png', 'iconValue':'images/icons/PI_Oni.png'});
+            icons.push({'iconFilePath':'images/icons/PI_GL_HF.png', 'iconValue':'images/icons/PI_GL_HF.png'});
+            icons.push({'iconFilePath':'images/icons/PI_Vivi.png', 'iconValue':'images/icons/PI_Vivi.png '});
+                       
+            iconSelect.refresh(icons);
+            document.getElementById('editbtn').addEventListener('click',function(e){
+                var mess=document.getElementById('linkbox');
+            	 var userN=document.getElementById('username');
+                // handleFileSelect(/*f*/);
+            	var user = firebase.auth().currentUser;
+
+                //all input
+                if(userN.value!="" && url!=""){    
+      user.updateProfile({
+      	
+        displayName: ""+userN.value,
+        photoURL: ""+url
+      }).then(function() {
+        // Update successful.
+    	  console.log("updated both");
+    	  mess.innerText="Done with success";
+      }, function(error) {
+        // An error happened.
+      });
+                }  
+                ////only the photo
+                if(userN.value=="" && url!=""){    
+              	  user.updateProfile({
+              	  	
+              	   // displayName: ""+userN.value,
+              	    photoURL: ""+url
+              	  }).then(function() {
+              	    // Update successful.
+                	    console.log("updated without username");
+                	    mess.innerText="Done with success";
+              	  }, function(error) {
+              	    // An error happened.
+              	  });
+              	            }        
+                ////only name
+                if(userN.value!="" && url==""){    
+              	  user.updateProfile({
+              	  	
+              	    displayName: ""+userN.value,
+              	    //photoURL: ""+url
+              	  }).then(function() {
+              	    // Update successful.
+              		  console.log("updated without photo");
+              		mess.innerText="Done with success";
+              	  }, function(error) {
+              	    // An error happened.
+              	  });
+              	            }      
+                
+                 
+             }
+               
+            );
+        };
+        
+        </script>
+</head>
+<body>
+   
+   <header>
+
+
+   </header>
+   <div class="container">
+      
+<div class="content">
+    
+    
+    <div class="login">
+       
+ 
+        <input class="fieldname" type="text" name="" id="username" placeholder="UserName">
+        <!--  <input type="file" id="file" name="file">-->
+     <div id="my-icon-select" style="margin-top:10px;margin-left:20px;"></div>
+       <!--   -->
+       <button  class="btnlogin" id="editbtn">Save</button>
+		<span class="pp" id="linkbox" style="display: center;"></span>
+     
+   
+        
+      </div>
+</div>
+       
+   </div>
+    
+ <script src="ressources/js/editprofile.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,340 @@
+#background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 100%;
+	 height: 100%; 
+	 overflow: hidden;
+	 z-index:0;
+	} 
+#bgcopie3 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 100%;
+	 height: 100%;
+	 z-index:1;
+} 
+
+ #previcon 
+{ 
+	 left: 16%; 
+	 top: 71.4%; 
+	 position: absolute; 
+	 width: 6%;
+	 height: 2.55%;
+	 z-index:2;
+} 
+
+ #nexticon 
+{ 
+	 left: 75.3%; 
+	 top: 71.4%; 
+	 position: absolute; 
+	 width: 6%;
+	 height: 2.55%;
+	 z-index:3;
+} 
+
+ #shuffleicon 
+{ 
+	 left: 86.7%; 
+	 top: 71.4%; 
+	 position: absolute; 
+	 width: 6%;
+	 height: 2.55%;
+	 z-index:4;
+} 
+
+ #repeticon 
+{ 
+	 left: 6.4%; 
+	 top: 71.4%; 
+	 position: absolute; 
+	 width: 6%;
+	 height: 2.55%;
+	 z-index:5;
+} 
+
+ #albumart 
+{ 
+	 left: 31.7%; 
+	 top: 62.5%; 
+	 position: absolute; 
+	 width: 35.47%;
+	 height: 20.24%;
+	 z-index:6;
+} 
+
+ #pointvibe 
+{ 
+	 left: 23.5%; 
+	 top: 58%; 
+	 position: absolute; 
+	 width: 51%;
+	 height: 29.5%;
+	 z-index:7;
+} 
+
+ #pointvibecopy 
+{ 
+	 left: 28%; 
+	 top: 60.2%; 
+	 position: absolute; 
+	 width: 42.8%;
+	 height: 25%;
+	 z-index:8;
+} 
+
+ #pointvibe_0 
+{ 
+	 left: 31.5%; 
+	 top: 62.5%; 
+	 position: absolute; 
+	 width: 35.4%;
+	 height: 20.4%;
+	 z-index:9;
+} 
+
+ 
+
+ 
+
+
+ #layer_234 
+{ 
+	 left: 43%; 
+	 top: 88%; 
+	 position: absolute; 
+	 width: 12%;
+	 height: 3.5%;
+	 z-index:15;
+} 
+
+ #layer_16 
+{ 
+	 left: 47.6%; 
+	 top:70%; 
+	 position: absolute; 
+	 width: 3.8%;
+	 height: 4.3%;
+	 z-index:16;
+} 
+
+ #shadow 
+{ 
+	 left: -2px; 
+	 top: -16px; 
+	 position: absolute; 
+	 width: 100%;
+	 height: 72.4%;
+	 z-index:17;
+} 
+
+ #LEFTPHOTO2 
+{ 
+	 left: 0.6%; 
+	 top: 15%; 
+	 position: absolute; 
+	 width: 40%;
+	 height: 22%;
+	 z-index:18;
+} 
+
+ #LEFTPHOTO 
+{ 
+	 left: 6%; 
+	 top: 14%; 
+	 position: absolute; 
+	 width: 55%;
+	 height: 29%;
+	 z-index:19;
+} 
+
+ #RIGHTPHOTO2 
+{ 
+	 left: 59%; 
+	 top: 15%; 
+	 position: absolute; 
+	 width: 40%;
+	 height: 22%;
+	 z-index:20;
+} 
+
+ #RIGHTPHOTO1 
+{ 
+	 left: 38%; 
+	 top: 14%; 
+	 position: absolute; 
+	 width: 57%;
+	 height: 31%;
+	 z-index:21;
+} 
+
+ #firstimage 
+{ 
+	 left: 15%; 
+	 top: 12.5%; 
+	 position: absolute; 
+	 width: 70%;
+	 height: 40%;
+	 z-index:22;
+} 
+
+ #eqicon 
+{ 
+	 left: 88%; 
+	 top: 6%; 
+	 position: absolute; 
+	 width: 4.7%;
+	 height: 3%;
+	 z-index:23;
+} 
+
+ #menuicon 
+{ 
+	 left: 6%; 
+	 top: 6%; 
+	 position: absolute; 
+	 width: 5.6%;
+	 height: 2.8%;
+	 z-index:24;
+} 
+
+ #WhiteBar 
+{ 
+	 left: -1px; 
+	 top: 0; 
+	 position: absolute; 
+	 width: 100%;
+	 height: 3.8%;
+	 z-index:25;
+} 
+
+ #Containerb 
+{ 
+	 left: 90%; 
+	 top: 1.2%; 
+	 position: absolute; 
+	 width: 7.5%;
+	 height: 2%;
+	 z-index:26;
+} 
+
+ #Fill 
+{ 
+	 left: 90%; 
+	 top: 1.4%; 
+	 position: absolute; 
+	 width: 7.6%;
+	 height: 1.6%;
+	 z-index:27;
+} 
+
+ #layer_66 
+{ 
+	 left: 82%; 
+	 top: 1.4%; 
+	 position: absolute; 
+	 width: 7.3%;
+	 height: 1.7%;
+	 z-index:28;
+} 
+
+ #locicon 
+{ 
+	 left: 76.5%; 
+	 top: 1.3%; 
+	 position: absolute; 
+	 width: 3.4%;
+	 height: 1.8%;
+	 z-index:29;
+} 
+
+ #orientationlock 
+{ 
+	 left: 456px; 
+	 top: 13px; 
+	 position: absolute; 
+	 width: 25px;
+	 height: 23px;
+	 z-index:30;
+} 
+
+ #923AM 
+{ 
+	 left: 273px; 
+	 top: 16px; 
+	 position: absolute; 
+	 width: 93px;
+	 height: 19px;
+	 z-index:31;
+} 
+
+ #WifiTop 
+{ 
+	 left: 85px; 
+	 top: -1px; 
+	 position: absolute; 
+	 width: 38px;
+	 height: 53px;
+	 z-index:32;
+} 
+
+ #WifiMiddle 
+{ 
+	 left: 86px; 
+	 top: -1px; 
+	 position: absolute; 
+	 width: 35px;
+	 height: 47px;
+	 z-index:33;
+} 
+
+ #WifiBottom 
+{ 
+	 left: 86px; 
+	 top: -1px; 
+	 position: absolute; 
+	 width: 36px;
+	 height: 43px;
+	 z-index:34;
+} 
+
+ #SignalDotsActive 
+{ 
+	 left: 11px; 
+	 top: 18px; 
+	 position: absolute; 
+	 width: 28px;
+	 height: 14px;
+	 z-index:35;
+} 
+
+ #SignalDotsInactive 
+{ 
+	 left: 39px; 
+	 top: 18px; 
+	 position: absolute; 
+	 width: 42px;
+	 height: 14px;
+	 z-index:36;
+} 
+
+.layer_17 {
+    
+    left: 47.6%; 
+	 top:70%; 
+	 position: absolute; 
+	 width: 3.8%;
+	 height: 4.3%;
+	 z-index:16;
+    
+}
+.hide {
+  display: none !important;
+}

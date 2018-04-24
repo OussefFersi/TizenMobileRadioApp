@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="ressources/css/rating.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<!--<script src="vendors/js/jquery-3.1.1.min.js"></script>-->
+
+    
+</head>
+<body>
+    <header>
+    </header>
+        
+        <div>
+            <ul class="c-rating">
+                <li class="c-rating__item " data-index="0"></li>
+                <li class="c-rating__item " data-index="1"></li>
+                <li class="c-rating__item" data-index="2"></li>
+                <li class="c-rating__item" data-index="3"></li>
+                <li class="c-rating__item" data-index="4"></li>
+            </ul>
+        </div>
+    <script>
+    (function() {
+       
+     function addRating(){
+         
+         var maxRating = 5;
+           var ratingElement = document.getElementsByClassName('c-ratting');
+      var currentRating = 0;
+      var callback = function(rating) { alert(rating); };
+      var r = rating(ratingElement, currentRating, maxRating, callback);
+     }
+
+  })();
+    </script>
+    </body>
+</html>

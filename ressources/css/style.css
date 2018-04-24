@@ -1,0 +1,711 @@
+.favoris {
+    float: left;
+        height: 20px;
+    width:20px;
+   /* background-color:red;*/
+background-image: url(../img/Hearts_48px.png);
+background-size:20px;
+        background-repeat: no-repeat;
+
+}
+
+.notfavoris {
+    float: left;
+    background-image: url(../img/Like_48px.png);
+    background-size:20px;
+    background-repeat: no-repeat;
+        height: 20px;
+         /*background-color:red;*/
+    width: 20px;
+}
+.newsIcon {
+    float: right;
+    background-image: url(../img/Generic-news-icon.png);
+    background-size:20px;
+    background-repeat: no-repeat;
+        height: 20px;
+         /*background-color:red;*/
+    width: 20px;
+}
+.twitIcon {
+    float: right;
+    background-image: url(../img/twitter-3-xxl.png);
+    background-size:20px;
+    background-repeat: no-repeat;
+        height: 20px;
+         /*background-color:red;*/
+    width: 20px;
+}
+.youtIcon {
+    float: right;
+    background-image: url(../img/webcam.png);
+    background-size:20px;
+    background-repeat: no-repeat;
+        height: 20px;
+         /*background-color:red;*/
+    width: 20px;
+}
+
+
+
+#audio{
+	 margin-top:50px;
+   /* display:block;*/
+   position:fixed;
+    bottom: 0;
+	 z-index: 800! important;
+	
+	
+}
+.pip{
+	
+	position:fixed;
+	height: 88px;
+   width:100%;
+     background-image: url(../img/bgcopie3.png);
+	
+}
+header{
+    position: fixed;
+    width: 100%;
+ 
+    
+   
+}
+.search {
+    width: 100%;
+    /*height: 36px;*/
+    opacity: 0.5;
+    border-radius: 5px;
+    border: 2px solid #a2a2a2;
+    font-size: 18px;
+    background-color: #a2a2a2;
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    background-position: 5px 0px;
+    margin-top: 24px;
+    
+}
+
+.searchbox input{
+    
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.searchbox {
+   margin:  0 auto;
+    width: 90%;
+   
+}
+
+
+input:focus { 
+outline: none;
+}
+html{
+    
+     height: 100%;
+}
+body {
+   
+    height: 100%;
+     margin: 0;
+    margin-top: 12px;
+   background-image: url(../img/bgcopie3.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+    
+}
+
+
+
+.menu {
+    list-style:  none;
+    height: 56px;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+  
+}
+
+.menu li{
+    padding-top: 16px;
+      box-sizing: border-box;
+    text-align:center;
+    font-size: 34px;
+    float: left;
+    height: 65px;
+    width: 25%;
+        background-color: #765A62;
+
+}
+.menu li:hover{
+        background-color: #a89097;
+
+}
+
+.content {
+padding-top: 91px;
+    
+    
+  
+}
+.content ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 68px;
+    padding: 0;
+}
+.content ul li {
+  box-shadow: 0px 2px 5.64px 0.36px rgba(0, 0, 0, 0.58);
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.15);
+  /*height: 128px;*/
+    border-radius: 5px;
+            overflow: hidden;
+    margin-bottom: 5px;
+
+    
+}
+
+.content ul li:hover {
+ 
+    background-color: rgba(255, 255, 255, 0.28);;
+
+    
+}
+
+
+.logo {
+    
+    width: 130px;
+    float: left;
+  /* height: 130px;*/
+
+}
+
+.titledesc {
+    float: left;
+    padding-left: 7px;
+    width: 300px;
+
+
+}
+
+.description {
+    font-family: sans-serif;
+    margin-top: 0;
+    width: 314px;
+    font-size: 13px;
+    color: #afafaf
+}
+
+
+h3 {
+    
+    margin-bottom: 8px;
+    font-family: "Roboto";
+    
+
+
+  color: rgb(255, 255, 255);
+  line-height: 0.276;
+  text-shadow: 0px 2px 1.96px rgba(0, 0, 0, 0.58);
+ 
+
+}
+
+
+.play {
+    float: left;
+    text-align: center;
+    width: 20%;
+    opacity: 0.7;
+    margin-top: 37px;
+    border-left: 1px solid #000;
+    border-image: url(../img/mosaique-fm_0.png);
+}
+
+.pause {
+        float: left;
+    text-align: center;
+    width: 110px;
+    opacity: 0.7;
+    margin-top: 23px;
+    border-left: 1px solid #000;
+    border-image: url(../img/mosaique-fm_0.png);
+}
+
+.rating {
+    float: left;
+    height:20px;
+    padding:0;
+    margin:0;
+    margin-top: -2px;
+    width: 60px;
+}
+
+.rating ul li {
+     border-radius: 0! important;
+  background-color: rgba(255, 255, 255, 0)! important;
+    box-shadow: none! important;
+    padding: 0;
+    height: 24px! important;;
+    margin:0;
+  /*height: 128px;*/
+   
+    
+}
+.rating ul {
+  	
+    padding: 0;
+    margin:0  0 5px 9px !important;
+  /*height: 128px;*/
+   
+    
+}
+
+.fixedscrol {
+    bottom: 0px;
+    height: 80px;
+    width: 100%;
+    background-color: #353535;
+    position: fixed;
+  box-shadow: 0px 3px 11.18px 1.82px rgba(0, 0, 0, 0.58);
+    text-align: center;
+    
+    margin-top: 100px;
+    padding-bottom:40px;
+   
+     
+    opacity: .9;
+}
+
+
+
+.next {
+    float: left;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 15px;}
+
+.stop {
+    float: left;
+    font-size: 50px;
+}
+
+.previous {
+    float: left;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.playcontrol {
+    margin: 0 auto;
+    width: 202px;
+    height: 80%;
+    padding-left: 10%;
+}
+
+.login {
+ height: 70%;
+    width: 100%;
+    margin: 0 auto;
+   
+    position: absolute;
+}
+
+.login input{
+    display: block;
+    width: 90%;
+    height: 50px;
+    
+    padding-left: 40px;
+    margin-top: 5px;
+    background-color: #a5a5a5;
+    border: none;
+    margin: 0 auto;
+        margin-top: 5px;
+
+    
+}
+
+
+
+.fieldname{
+
+    
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 18px;
+    
+    
+  
+    
+   
+
+    
+    
+}
+
+.fieldpass{
+-webkit-appearance: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+   
+    
+    
+}
+.userlogo {
+
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-size: 26px;
+    opacity: 0.5;
+}
+
+.locklogo {
+    position: absolute;
+    top:70px;
+    left: 25px;
+    font-size: 26px;
+    opacity: 0.5;
+
+    
+}
+
+.btnlogin {
+    
+    width: 50%;
+    height: 60px;
+        background-color: #a5a5a5;
+
+        margin: 0 auto;
+    display: block;
+        margin-top: 10px;
+    font-size: 18px;
+    color: #5f5f5f;
+    font-weight: 100;
+    
+    
+border-radius: 3px;
+border: none;
+}
+
+.btnlogin:hover{
+    background-color: #d8d8d8;
+}
+
+.loingtn {
+    width: 200px;
+    margin: 0 auto;
+    
+}
+
+.forgot  {
+    margin-top: 9px;
+    text-align: center;
+    color: #a5a5a5
+}
+
+.forgot a {
+    color: #a5a5a5;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+        
+}
+.forgot a:hover {
+    color: #e5e5e5;
+}
+.forgot a{
+    transition: color 0.2s;
+}
+
+.socialicons {
+    width: 188px;
+    margin: 0 auto;
+    margin-top: 31px;
+    text-align: center;
+}
+
+.logoimg {
+    margin: 0 auto;
+    display: block;
+    height:150px;
+    margin-bottom: 20px;
+}
+
+.logologin {
+       width: 100%;
+ /*height: 30%;*/
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+}
+
+.container {
+    height: 90%;
+   
+}
+
+
+
+/* Silide Menu */
+
+/* The side navigation menu */
+.sidenav {
+    height: 90%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 9000! important; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    
+    .searchslide {padding-top: 15px;}
+}
+
+.searchslide {
+    height:65px; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    /*position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    /*background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+  
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.closebtnS {
+    position: absolute;
+    top: 30px;
+    left: 310px;
+    font-size: 26px;
+    z-index: 1;
+    opacity:0.5;
+}
+
+.searchbutton {
+    position: absolute;
+    top: 9px;
+    left: 24px;
+    z-index: 999;
+    font-size: 26px;
+    opacity: 0.5;
+    
+}
+.searchContainer {
+     
+    width: 100%;
+    height: 88px;
+    position: fixed;
+     background-image: url(../img/bgcopie3.png);
+    box-shadow: 0px 2px 5.64px 0.36px rgba(0, 0, 0, 6.58);
+    -webkit-background-size: cover;
+    z-index: 1;
+
+
+    
+}
+audio {
+   /* position: fixed;
+    width:  100%;*/
+}
+
+
+
+.search-wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:10%;
+    left:10%;
+}
+.search-wrapper.active {}
+
+
+.search-wrapper .input-holder {    
+    height: 70px;
+    width:70px;
+    overflow: hidden;
+    background: rgba(255,255,255,0);
+    border-radius:6px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.search-wrapper.active .input-holder {
+    width:250px;
+    border-radius: 50px;
+    background: rgba(0,0,0,0.5);
+    transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+}
+
+.search-wrapper .input-holder .search-input {
+    width:100%;
+    height: 50px;
+    padding:0px 70px 0 20px;
+    opacity: 0;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background: transparent;
+    box-sizing: border-box;
+    border:none;
+    outline:none;
+    font-family:"Open Sans", Arial, Verdana;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color:#FFF;
+    transform: translate(0, 60px);
+    transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    transition-delay: 0.3s;
+}
+.search-wrapper.active .input-holder .search-input {
+    opacity: 1;
+    transform: translate(0, 10px);
+}
+.search-wrapper .input-holder .search-icon {
+    width:70px;
+    height:70px;
+    border:none;
+    border-radius:6px;
+    background: #FFF;
+    padding:0px;
+    outline:none;
+    position: relative;
+    z-index: 2;
+    float:right;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.search-wrapper.active .input-holder .search-icon {
+    width: 50px;
+    height:50px;
+    margin: 10px;
+    border-radius: 30px;
+}
+.search-wrapper .input-holder .search-icon span {
+    width:22px;
+    height:22px;
+    display: inline-block;
+    vertical-align: middle;
+    position:relative;
+    transform: rotate(45deg);
+    transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
+}
+.search-wrapper.active .input-holder .search-icon span {
+    transform: rotate(-45deg);
+}
+.search-wrapper .input-holder .search-icon span::before, .search-wrapper .input-holder .search-icon span::after {
+    position: absolute; 
+    content:'';
+}
+.search-wrapper .input-holder .search-icon span::before {
+    width: 4px;
+    height: 11px;
+    left: 9px;
+    top: 18px;
+    border-radius: 2px;
+    background: #FE5F55;
+}
+.search-wrapper .input-holder .search-icon span::after {
+    width: 14px;
+    height: 14px;
+    left: 0px;
+    top: 0px;
+    border-radius: 16px;
+    border: 4px solid #FE5F55;
+}
+.search-wrapper .close {
+    position: absolute;
+    z-index: 1;
+    top:24px;
+    right:20px;
+    width:25px;
+    height:25px;
+    cursor: pointer;
+    transform: rotate(-180deg);
+    transition: all .3s cubic-bezier(0.285, -0.450, 0.935, 0.110);
+    transition-delay: 0.2s;
+}
+.search-wrapper.active .close {
+    right:-50px;
+    transform: rotate(45deg);
+    transition: all .6s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    transition-delay: 0.5s;
+}
+.search-wrapper .close::before, .search-wrapper .close::after {
+    position:absolute;
+    content:'';
+    background: #FE5F55;
+    border-radius: 2px;
+}
+.search-wrapper .close::before {
+    width: 5px;
+    height: 25px;
+    left: 10px;
+    top: 0px;
+}
+.search-wrapper .close::after {
+    width: 25px;
+    height: 5px;
+    left: 0px;
+    top: 10px;
+}
+.pp {
+display: block;
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+.user-profile img{image-orientation:angle;width:50px;height:50px;border-radius:50%;margin-right:10px}

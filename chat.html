@@ -1,0 +1,145 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+<link rel="stylesheet" href="ressources/css/style.css">
+      
+<link rel="stylesheet" href="vendors/css/font-awesome.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="vendors/css/core.css">
+	<!--<script src="js/main.js"></script>-->
+      
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+    <!-- Firechat -->
+    <link rel="stylesheet" href="https://cdn.firebase.com/libs/firechat/3.0.1/firechat.min.css" />
+    
+    <script src="https://cdn.firebase.com/libs/firechat/3.0.1/firechat.min.js"></script>
+        <script>
+   
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+        
+        function openSearch() {
+    document.getElementById("mySearch").style.width = "100%";
+}
+
+
+function closeSearch() {
+    document.getElementById("mySearch").style.width = "0";
+}
+    </script> 
+  </head>
+  <body>
+    <script>
+        var config = {
+    apiKey: "AIzaSyAP14E690CXWqszSBr-FTfCcBCONoPQEsE",
+    authDomain: "mradiotocross.firebaseapp.com",
+    databaseURL: "https://mradiotocross.firebaseio.com",
+    storageBucket: "mradiotocross.appspot.com",
+    messagingSenderId: "707638579705"
+  };
+  firebase.initializeApp(config);
+     /* function login() {
+        // Log the user in via Twitter
+        var provider = new firebase.auth.TwitterAuthProvider();
+        firebase.auth().signInWithPopup(provider).catch(function(error) {
+          console.log("Error authenticating user:", error);
+        });
+      }*/
+     
+      firebase.auth().onAuthStateChanged(function(user) {
+        // Once authenticated, instantiate Firechat with the logged in user
+        
+        if(user.displayName==null){
+			alert("to use chat you need to add a username in edit profile");
+            }
+        if (user) {
+          initChat(user);
+          initProfilIcon(user);
+        }
+      });
+
+      function initChat(user) {
+        // Get a Firebase Database ref
+        var chatRef = firebase.database().ref("chat");
+
+        // Create a Firechat instance
+        var chat = new FirechatUI(chatRef, document.getElementById("firechat-wrapper"));
+
+        // Set the Firechat user
+        chat.setUser(user.uid,user.displayName);
+      }
+      function initProfilIcon(user){
+         	
+         	var eltp=document.getElementById('userElt');
+         	//var eltpimg=document.getElementById('pimg');
+         	console.log(user.photoURL);
+         	//eltpimg.setAttribute("src",""+user.photoURL+"");
+         	eltp.innerHTML='<img src="'+user.photoURL+'" alt="ressources/img/profileDefault.jpg" id="pimg">'+user.displayName;
+         }
+    </script>
+
+       <div class="container">
+      <header data-position="fixed">
+       
+          <ul class="menu">
+           <li><a  onclick="openNav()" ><i class="fa fa-th-list" aria-hidden="true"></i></a>
+</li>
+           <li id="listall"><i class="fa fa-bars" aria-hidden="true"></i></li>
+           <li id="chatMIcon"><a id="playerIcon"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
+           <li><a id="favl"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+
+       </ul>
+       
+      
+      
+      
+
+<!-- Add all page contAUent inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+
+       
+       
+   </header>
+<div class="content">
+      <div id="firechat-wrapper" style="margin-top: 0;margin-bottom: 50px;">
+     <!-- <button onclick="login('twitter');">Login with Twitter</button>-->
+    </div>
+  
+</div>
+       <!--   <audio id="audio" src="http://radio.mosaiquefm.net:8000/mosalive"
+       preload="auto" controls  loop >
+        </audio>-->
+   </div>
+       
+         <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <img class="logoimg" src="ressources/img/login.png" height="200px;" alt="">
+            <a  class="user-profile " id="userElt">
+                    <img src="ressources/img/profileDefault.jpg" alt="ressources/img/profileDefault.jpg" id="pimg">John Doe
+                    
+                  </a>
+  <a href="#" id="editbtn">Edit</a>
+  
+  <a href="#" id="logOutbtn">LogOut</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+      
+      <script src="ressources/js/player.js"></script>
+  
+  </body>
+  <script type="text/javascript">
+
+
+  </script>
+</html>

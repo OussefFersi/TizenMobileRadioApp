@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Streaming</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../build/jquery.js"></script>
+<script src="../build/mediaelement-and-player.min.js"></script>
+<script src="testforfiles.js"></script>
+<link rel="stylesheet" href="../build/mediaelementplayer.min.css" />
+</head>
+<body>
+
+
+
+	<h2>Streaming</h2>
+
+
+	<video width="50%" height="50%" src="" type="video/mp4" id="player1"
+		poster="../media/streaming-video.png" controls="controls"
+		preload="none"></video>
+
+	<script>
+		var webcamSRC = sessionStorage.getItem('Webcam');
+		document.addEventListener('tizenhwkey', function(e) {
+      		if (e.keyName == "back")
+      			//tizen.application.getCurrentApplication().exit();
+      			window.history.back();
+      		//tau.back();
+      			//var myWindow = window.open("index.html", "_self");
+      			console.log("back");
+      			
+      	});
+		function initWeb() {
+			console.log(webcamSRC);
+			if (webcamSRC == "offline") {
+				document.getElementById("player1").src ="../media/offline.mp4";
+			} else {
+				document.getElementById("player1").src =webcamSRC;
+			}
+			
+
+		}
+		initWeb();
+		$('audio,video').mediaelementplayer({
+			//mode: 'shim',
+			success : function(player, node) {
+				$('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+			}
+		});
+	</script>
+
+
+
+
+	<li>
+		<!--<a href="../index.html">Retour</a>-->
+	</li>
+
+
+</body>
+</html>

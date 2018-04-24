@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="ressources/css/style.css">
+<link rel="stylesheet" href="vendors/css/font-awesome.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+document.addEventListener('tizenhwkey', function(e) {
+		if (e.keyName == "back")
+			//tizen.application.getCurrentApplication().exit();
+			window.history.back();
+		//tau.back();
+			//var myWindow = window.open("index.html", "_self");
+			console.log("back");
+			
+	});
+	window.twttr = (function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
+		if (d.getElementById(id))
+			return t;
+		js = d.createElement(s);
+		js.id = id;
+		js.src = "https://platform.twitter.com/widgets.js";
+		fjs.parentNode.insertBefore(js, fjs);
+
+		t._e = [];
+		t.ready = function(f) {
+			t._e.push(f);
+		};
+
+		return t;
+	}(document, "script", "twitter-wjs"));
+</script>
+<script>
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+	}
+
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+	}
+
+	function openSearch() {
+		document.getElementById("mySearch").style.width = "100%";
+	}
+
+	function closeSearch() {
+		document.getElementById("mySearch").style.width = "0";
+	}
+</script>
+</head>
+<body>
+	<a class="twitter-timeline" id="twt" href="" onload="initTwitt();">Test</a>
+	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+	<script>
+		var twitterSRC = sessionStorage.getItem('twitter');
+
+		function initTwitt() {
+			console.log(twitterSRC);
+			document.getElementById("twt").href = twitterSRC;
+
+			//setAttribute("type", "button")
+		}
+		initTwitt();
+	</script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="vendors/css/font-awesome.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="ressources/css/style.css">
+
+    <link rel="stylesheet" href="ressources/css/player.css">
+
+	<link rel="stylesheet" href="vendors/css/core.css">
+<!--<script src="vendors/js/jquery-3.1.1.min.js"></script>-->
+<script src="ressources/js/script.js"></script>
+    <script src="ressources/js/player.js"></script>
+     <script type="text/javascript">
+     
+     const mplayer =document.getElementById('radioplayer');
+     const playbtn=document.getElementById('playbtn1');
+     const pausebtn=document.getElementById('pausebtn');
+function play(){
+	 mplayer.pause();
+     pausebtn.classList.add('hide');
+     playbtn.classList.remove('hide');
+      console.log('pause-clicked');
+}
+
+function pause(){
+
+	mplayer.play();
+    playbtn.classList.add('hide');
+    pausebtn.classList.remove('hide');
+     console.log('play-clicked');
+	
+}
+
+     </script>
+</head>
+<body>
+    <header>
+    </header>
+    
+    <div id="background">
+        
+        <div id="bgcopie3"><img src="ressources/img/player/bgcopie3.png"></div>
+        
+			<div id="previcon"><img src="ressources/img/player/prevAppicon.png"></div>
+			<div id="nexticon"><img src="ressources/img/player/nextAppicon.png"></div>
+			<div id="shuffleicon"><img src="ressources/img/player/shuffleAppicon.png"></div>
+			<div id="repeticon"><img src="ressources/img/player/repetAppicon.png"></div>
+			<div id="albumart"><img src="ressources/img/player/albumart.png"></div>
+			<div id="pointvibe"><img src="ressources/img/player/pointvibe.png"></div>
+			<div id="pointvibecopy"><img src="ressources/img/player/pointvibecopy.png"></div>
+			<div id="pointvibe_0"><img src="ressources/img/player/pointvibe_0.png"></div>
+			
+			
+			
+			<div id="layer_234"><img src="ressources/img/player/layer_234.png"></div>
+        
+			
+            <audio id="radioplayer" src="http://radio.mosaiquefm.net:8000/mosalive" ></audio>
+            <div  class="layer_17"  id="playbtn1"><a onclick="play()"><i class="fa fa-power-off" aria-hidden="true"></i></a></div>
+            <div  class="layer_17 hide" id="pausebtn"><a onclick="pause()"><i class="fa fa-power-off" aria-hidden="true"></i></a></div>
+         
+          
+       
+            
+    
+			<div id="shadow"><img src="ressources/img/player/shadow.png"></div>
+			<div id="LEFTPHOTO2"><img src="ressources/img/player/LEFTPHOTO2.png"></div>
+			<div id="LEFTPHOTO"><img src="ressources/img/player/LEFTPHOTO.png"></div>
+			<div id="RIGHTPHOTO2"><img src="ressources/img/player/RIGHTPHOTO2.png"></div>
+			<div id="RIGHTPHOTO1"><img src="ressources/img/player/RIGHTPHOTO1.png"></div>
+			<div id="firstimage"><img src="ressources/img/player/firstimage.png"></div>
+			<div id="eqicon"><img src="ressources/img/player/eqAppicon.png"></div>
+			<div id="menuicon"><img id="back" src="ressources/img/player/menuAppicon.png"></div>
+			<div id="WhiteBar"><img src="ressources/img/player/WhiteBar.png"></div>
+			
+			
+            
+			
+        </div>
+    <script src="ressources/js/player.js"></script>
+</body>
+</html>
